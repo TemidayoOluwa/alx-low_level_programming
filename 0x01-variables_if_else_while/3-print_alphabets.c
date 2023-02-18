@@ -19,5 +19,6 @@ c = 'a';
 			putchar(c);
 			d++;
 		}
+	putchar('\n')
 	return (0);
 }
