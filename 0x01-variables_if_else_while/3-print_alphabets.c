@@ -15,10 +15,9 @@ c = 'a';
 			c++;
 		}
 	while
-		(c <= 'Z') {
-			putchar(d);
+		(d <= 'Z') {
+			putchar(c);
 			d++;
 		}
-	putchar('\n');
 	return (0);
 }
