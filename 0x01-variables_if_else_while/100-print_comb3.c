@@ -1,21 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main -entry
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
+	int d;
+	int p;
 
-	for (tens = '0'; tens <= '9'; tens++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		if (!((ones == tens) || (tens > ones)))
+		for (p = d + 1; p <= '9'; p++)
 		{
-			putchar(tens);
-			putchar(ones);
-			if (!(ones == '9' && tens == '8'))
+			if (p != d)
 			{
+				putchar(d);
+				putchar(p);
+				if (d == '8' && p == '9')
+					continue;
 				putchar(',');
 				putchar(' ');
 			}
