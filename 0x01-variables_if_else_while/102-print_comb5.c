@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 /**
  * main - entry
  * Return: Always 0 (Success)
@@ -11,9 +10,9 @@ int main(void)
 
 	for (p = 0; p < 100; p++)
 	{
-		if (p < q)
+		for (q = 0; q < 100; q++)
 		{
-			for (q = 0; q < 100; q++)
+			if (p < q)
 			{
 				putchar((p / 10) + 48);
 				putchar((p % 10) + 48);
