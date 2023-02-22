@@ -4,13 +4,11 @@
  * @c: The number to be computed
  * Returns: Absolute value of an integer
  */
-int _abs(int c)
+int _abs(int t)
 {
-	if (c < 0)
-	{
-		int abs_val;
-		abs_val = c * -1;
-		return (abs_val);
-	}
-	return (c);
+	if (t >= 0)
+		return (t);
+	else
+		return(-t);
 }
+
